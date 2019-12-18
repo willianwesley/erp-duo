@@ -1,5 +1,5 @@
 <?php
-    require_once 'class/user.php';  
+    require_once '../model/user.php';  
     $u = new Usuario;
     // Verificar se clicou no botão
     if(isset($_POST['nome'])){

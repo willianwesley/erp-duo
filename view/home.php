@@ -8,4 +8,4 @@
 ?>
 
 SEJA BEM VINDO!
-<a href="exit.php">Sair</a>
+<a href="../controller/exit.php">Sair</a>

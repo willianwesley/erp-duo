@@ -1,5 +1,5 @@
 <?php
-require_once 'class/user.php';  
+require_once '../model/user.php';   
 $u = new Usuario;
 if(isset($_POST['email'])){
     $email = addslashes($_POST['email']);
@@ -8,7 +8,7 @@ if(isset($_POST['email'])){
         $u->conectar("erpduo","localhost","root","");
             if($u->msgError == ""){
                 if($u->logar($email,$senha)){
-                    header("location: home.php");
+                    header("location: ../view/home.php");
                 }else{
                     echo "Email e/ou senha estão incorretos!";
                 }

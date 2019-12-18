@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ERP Duo - Sistema de gestão empresarial</title>
-    <link rel="stylesheet" href="css/estiloLogin.css">
+    <link rel="stylesheet" href="../css/estiloLogin.css">
 </head>
     <body>
     <div id="corpo-form">
         <h1>ERP Duo</h1>
-        <form action="processaLogin.php" method="POST">
+        <form action="../controller/controllerLogin.php" method="POST">
             <input type="email" name="email" placeholder="Usuário/e-mail" maxlength="30">
             <input type="password" name="senha" placeholder="Senha" maxlength="15">
             <input type="submit" value="Acessar" id="button">
