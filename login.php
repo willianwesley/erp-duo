@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ERP Duo - Sistema de gestão empresarial</title>
+    <link rel="stylesheet" href="css/estiloLogin.css">
+</head>
+    <body>
+    <div id="corpo-form">
+        <h1>ERP Duo</h1>
+        <form action="processaLogin.php" method="POST">
+            <input type="email" name="email" placeholder="Usuário/e-mail" maxlength="30">
+            <input type="password" name="senha" placeholder="Senha" maxlength="15">
+            <input type="submit" value="Acessar" id="button">
+            <a href="cadastro.php">Ainda não tem <strong> Cadastro?</strong></a>
+        </form> 
+    </div>
+    </body>
+</html>
