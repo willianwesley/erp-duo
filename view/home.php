@@ -7,7 +7,7 @@
     }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no" />
     <link rel="icon" type="imagem/png" href="../imagens/icone.png" />
@@ -64,8 +64,14 @@
         </ul>
         <a href="../controller/exit.php" class="exitBotton">Sair<i class="fas fa-sign-out-alt"></i></a>
     </nav>
-    <h1 id="firsth1">SEJA BEM VINDOOOOOOOOOOOOOOOOOOOOOOOOO</h1>
-    <h1>AO MELHOR SISTEMA DE GESTÃO EMPRESARIAL DO BRASIL</h1>
+    <div class="container">
+        <div class="card-top conteiner-new">
+            <div class="card-header card-home">
+                Seja bem vindo, Willian Fidelis! Somos o sistema de gestão empresarial DuoERP!
+            </div>
+            <hr>
+        </div>
+    </div>
 </body>
 <style>
 h1#firsth1 {

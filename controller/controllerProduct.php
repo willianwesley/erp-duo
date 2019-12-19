@@ -1,7 +1,6 @@
 <?php
 session_start();
 include_once '../model/conexao.php';
-
 $btn = filter_input(INPUT_POST,'btnn', FILTER_SANITIZE_STRING);
 if($btn){
     // Receber dos inputs
@@ -10,7 +9,6 @@ if($btn){
     $valor_venda = filter_input(INPUT_POST,'valorProduct', FILTER_SANITIZE_STRING);
     $cod_barra = filter_input(INPUT_POST,'codbarProduct', FILTER_SANITIZE_STRING);
     // Inserir dados no banco de dados
-
     $resultquery = "INSERT INTO products(nome_produto, codigo, valor_venda, codebar)
     values (:nome, :cod, :valor, :codebar)";
     $insertquery = $conn->prepare($resultquery);

@@ -148,6 +148,7 @@ div.span-hist {
     border: 1px solid #eee;
     background: #fff;
     height: 700px;
+    border-radius: 1%;
 }
 hr{
     z-index: 1 !important;
@@ -194,4 +195,9 @@ input.margin-btn{
 div.btn-conf{
     margin-left: 18px; 
     margin-right: 15px; 
+}
+
+div.card-home{
+    border: none;
+    background: #fff;
 }
