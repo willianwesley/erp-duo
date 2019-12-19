@@ -1,4 +1,3 @@
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <?php
 session_start();
 require_once '../model/user.php';   

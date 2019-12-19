@@ -17,7 +17,7 @@
     <body>
         <nav class="navbar navbar-light menu">
                 <ul>
-                    <a href="../home.php"><img src="../../imagens/icone.png" width="30px" height="30px" alt=""
+                    <a href="../home.php" class="link-img"><img src="../../imagens/icone.png" width="30px" height="30px" alt=""
                     title="DuoERP - Sistema de gestão empresarial"></a>
                     <li><a href="../home.php">Home</a></li>
                     <li><a href="#">Cadastros <i class="fa fa-sort-desc"></i></a>
@@ -49,7 +49,7 @@
                     <li>
                         <a href="#">Ponto de Venda<i class="fa fa-sort-desc"></i></a>
                     </li>
-                    <button>
+                    <button class="btn-pdv">
                         <a href="">PDV</a>
                     </button>
                 </ul>
