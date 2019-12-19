@@ -14,46 +14,46 @@
     <link rel="stylesheet" href="../../css/home.css">
     <title>ERP Duo - Sistema de gestão financeira</title>
 </head>
-<body>
-    <nav class="navbar navbar-light menu">
-            <ul>
-                <a href="../home.php"><img src="../../imagens/icone.png" width="30px" height="30px" alt=""
-                title="DuoERP - Sistema de gestão empresarial"></a>
-                <li><a href="../home.php">Home</a></li>
-                <li><a href="#">Cadastros <i class="fa fa-sort-desc"></i></a>
-                    <ul>
-                        <li class="navbar-geral">Geral</li>
-                        <li><a href="product.php" class="width">Produtos</a></li>
-                        <li><a href="clients.php" class="width">Clientes</a></li>
-                        <li><a href="#" class="width">Fornecedores</a></li>
-                        <li><a href="#" class="width">Transportadoras</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Vendas<i class="fa fa-sort-desc"></i></a>
-                    <ul>
-                        <li class="navbar-geral">Vendas</li>
-                        <li><a href="#" class="width">Pedidos</a></li>
-                        <li><a href="#" class="width">Vendas</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Estoque<i class="fa fa-sort-desc"></i></a>
-                </li>
-                <li>
-                    <a href="#">Financeiro<i class="fa fa-sort-desc"></i></a>
-                </li>
-                <li>
-                    <a href="#">Relatórios<i class="fa fa-sort-desc"></i></a>
-                </li>
-                <li>
-                    <a href="#">Ponto de Venda<i class="fa fa-sort-desc"></i></a>
-                </li>
-                <button>
-                    <a href="">PDV</a>
-                </button>
-            </ul>
+    <body>
+        <nav class="navbar navbar-light menu">
+                <ul>
+                    <a href="../home.php"><img src="../../imagens/icone.png" width="30px" height="30px" alt=""
+                    title="DuoERP - Sistema de gestão empresarial"></a>
+                    <li><a href="../home.php">Home</a></li>
+                    <li><a href="#">Cadastros <i class="fa fa-sort-desc"></i></a>
+                        <ul>
+                            <li class="navbar-geral">Geral</li>
+                            <li><a href="product.php" class="width">Produtos</a></li>
+                            <li><a href="clients.php" class="width">Clientes</a></li>
+                            <li><a href="#" class="width">Fornecedores</a></li>
+                            <li><a href="#" class="width">Transportadoras</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Vendas<i class="fa fa-sort-desc"></i></a>
+                        <ul>
+                            <li class="navbar-geral">Vendas</li>
+                            <li><a href="#" class="width">Pedidos</a></li>
+                            <li><a href="#" class="width">Vendas</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Estoque<i class="fa fa-sort-desc"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Financeiro<i class="fa fa-sort-desc"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Relatórios<i class="fa fa-sort-desc"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Ponto de Venda<i class="fa fa-sort-desc"></i></a>
+                    </li>
+                    <button>
+                        <a href="">PDV</a>
+                    </button>
+                </ul>
             <a href="../../controller/exit.php" class="exitBotton">Sair<i class="fas fa-sign-out-alt"></i></a>
-    </nav>
-</body>
+        </nav>
+    </body>
 </html>
