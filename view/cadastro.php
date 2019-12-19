@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ERP Duo - Sistema de gestão empresarial</title>
     <link rel="stylesheet" href="../css/estiloLogin.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 </head>
     <body>
     <div id="corpo-form-Cad">

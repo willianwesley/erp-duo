@@ -1,11 +1,3 @@
-<?php
-    // Verificar se está logado, caso não redirecionar para login.php
-    session_start();
-    if(!isset($_SESSION['id_user'])){
-        header("location: login.php");
-        exit;
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,20 +10,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../../css/home.css">
     <title>ERP Duo - Sistema de gestão financeira</title>
 </head>
 <body>
     <nav class="navbar navbar-light menu">
        
         <ul>
-            <a href="home.php"><img src="../imagens/icone.png" width="30px" height="30px" alt="" title="DuoERP - Sistema de gestão empresarial!"></a>
-            <li><a href="home.php">Home</a></li>
+            <a href="home.php"><img src="../../imagens/icone.png" width="30px" height="30px" alt="" title="DuoERP - Sistema de gestão empresarial!"></a>
+            <li><a href="../home.php">Home</a></li>
             <li><a href="#">Cadastros <i class="fa fa-sort-desc"></i></a>
                 <ul>
                     <li class="navbar-geral">Geral</li>
-                    <li><a href="cadastro/product.php" class="width">Produtos</a></li>
-                    <li><a href="cadastro/clients.php" class="width">Clientes</a></li>
+                    <li><a href="product.php" class="width">Produtos</a></li>
+                    <li><a href="clients.php" class="width">Clientes</a></li>
                     <li><a href="#" class="width">Fornecedores</a></li>
                     <li><a href="#" class="width">Transportadoras</a></li>
                 </ul>
