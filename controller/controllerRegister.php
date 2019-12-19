@@ -18,7 +18,7 @@
 
                         ?>
                             <div id="msg-sucess">   
-                                Cadastro realizado com sucesso! Faça <a href="login.php">login!</a>
+                                Cadastro realizado com sucesso! Faça <a href="../view/login.php">login!</a>
                             </div>
                         <?php
                     }else{

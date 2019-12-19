@@ -10,8 +10,8 @@
     <body>
     <div id="corpo-form-Cad">
         <h1>Cadastro</h1>
-        <form action="../controller/controllerRegister.php" method="POST">
-            <input type="text" name="nome" placeholder="Nome completo" maxlength="60">
+        <form action="../controller/controllerRegister.php" method="POST" autocomplete="off">
+            <input type="text" name="nome" placeholder="Nome completo" maxlength="60" autofocus>
             <input type="text" name="telefone" placeholder="Telefone" maxlength="30">
             <input type="email" name="email" placeholder="Usuário/e-mail" maxlength="40">
             <input type="password" name="senha" placeholder="Senha" maxlength="15">

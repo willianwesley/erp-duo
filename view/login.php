@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,14 +11,16 @@
     <link rel="stylesheet" href="../css/estiloLogin.css">
 </head>
     <body>
-    <div id="corpo-form">
-        <h1>ERP Duo</h1>
-        <form action="../controller/controllerLogin.php" method="POST">
-            <input type="email" name="email" placeholder="Usuário/e-mail" maxlength="30">
-            <input type="password" name="senha" placeholder="Senha" maxlength="15">
-            <input type="submit" value="Acessar" id="button">
-            <a href="cadastro.php">Ainda não tem <strong> Cadastro?</strong></a>
-        </form> 
-    </div>
+    <div id="card">   
+        <div id="corpo-form">
+            <h1>ERP Duo</h1>
+            <form action="../controller/controllerLogin.php" method="POST" autocomplete="off">
+                <input type="email" name="email" placeholder="Usuário/e-mail" maxlength="30" autofocus value>
+                <input type="password" name="senha" placeholder="Senha" maxlength="15">
+                <input type="submit" value="Acessar" id="button">
+                <a href="cadastro.php">Ainda não tem <strong> Cadastro?</strong></a>
+            </form> 
+        </div>
+    </div> 
     </body>
 </html>

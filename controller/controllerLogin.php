@@ -1,4 +1,6 @@
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <?php
+session_start();
 require_once '../model/user.php';   
 $u = new Usuario;
 if(isset($_POST['email'])){
@@ -10,7 +12,7 @@ if(isset($_POST['email'])){
                 if($u->logar($email,$senha)){
                     header("location: ../view/home.php");
                 }else{
-                    echo "Email e/ou senha estão incorretos!";
+                   echo "Email e/ou senha estão incorretos!";
                 }
             }else{
                 echo "Erro: ".$u->msgError;
