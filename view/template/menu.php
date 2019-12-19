@@ -17,7 +17,8 @@
     <nav class="navbar navbar-light menu">
        
         <ul>
-            <a href="home.php"><img src="../../imagens/icone.png" width="30px" height="30px" alt="" title="DuoERP - Sistema de gestão empresarial!"></a>
+            <a href="../home.php"><img src="../../imagens/icone.png" width="30px" height="30px" alt=""
+            title="DuoERP - Sistema de gestão empresarial"></a>
             <li><a href="../home.php">Home</a></li>
             <li><a href="#">Cadastros <i class="fa fa-sort-desc"></i></a>
                 <ul>
@@ -37,7 +38,7 @@
                 </ul>
             </li>
         </ul>
-        <a href="../controller/exit.php" class="exitBotton">Sair<i class="fas fa-sign-out-alt"></i></a>
+        <a href="../../controller/exit.php" class="exitBotton">Sair<i class="fas fa-sign-out-alt"></i></a>
     </nav>
 </body>
 </html>
