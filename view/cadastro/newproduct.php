@@ -38,16 +38,16 @@
                 <form action="../../controller/controllerProduct.php" method="POST" autocomplete="off">
                     <div class="row">
                         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 form-group">                         
-                            <label for="nameProduct" class="label-product"><strong>Nome do Produto</strong></label><br>
+                            <label for="nameProduct" class="label-product"><strong>Nome do Produto *</strong></label><br>
                             <input type="text" name="nameProduct" autofocus maxlenght="100" id="input_name">
                         </div>
                         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-3 form-group">                         
-                            <label for="codProduct" class="label-product"><strong>Código</strong></label><br>
+                            <label for="codProduct" class="label-product"><strong>Código *</strong></label><br>
                             <input type="text" name="codProduct" id="input_cod">
                         </div>
                         <div class="row">
                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-4 form-group">                         
-                                <label for="valorProduct" class="label-product" id="label-valor"><strong>Valor de Venda</strong></label><br>
+                                <label for="valorProduct" class="label-product" id="label-valor"><strong>Valor de Venda *</strong></label><br>
                                 <input type="text" name="valorProduct" id="input_valor" maxlength="10">
                             </div>
                             <div class="col-xs-12 col-sm-8 col-md-8 col-lg-4 form-group">                         

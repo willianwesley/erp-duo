@@ -23,20 +23,34 @@ if($btn){
     $sql->bindParam(':n',$nome_produto);
     $sql->execute();
     if($sql->rowCount() > 0){
-        $_SESSION['msg'] = "<div class='alert alert-danger btn-conf' role='alert'>Produto já cadastrado!<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+        $_SESSION['msg'] = "<div class='alert alert-danger btn-conf' role='alert'>Nome de Produto já cadastrado no sistema<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
         <span aria-hidden='true'>&times;</span></button></div>";
         header("Location: ../view/cadastro/newproduct.php");
         exit();
-    } else {
-        $insertquery->execute();
-        $_SESSION['msg'] = "<div class='alert alert-success btn-conf' role='alert'>
-        Produto cadastrado com sucesso!
-        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-            <span aria-hidden='true'>&times;</span>
-        </button></div>";
-        
+    }else if(empty($nome_produto)){
+        $_SESSION['msg'] = "<div class='alert alert-danger btn-conf' role='alert'>Preencha o campo obrigatório 'Nome do Produto'<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+        <span aria-hidden='true'>&times;</span></button></div>";
         header("Location: ../view/cadastro/newproduct.php");
         exit();
-    }
-}
-?>
+            }else if(empty($cod)){
+                $_SESSION['msg'] = "<div class='alert alert-danger btn-conf' role='alert'>Preencha o campo obrigatório 'Código'<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                <span aria-hidden='true'>&times;</span></button></div>";
+                header("Location: ../view/cadastro/newproduct.php");
+                exit();
+                    }else if(empty($valor_venda)){
+                        $_SESSION['msg'] = "<div class='alert alert-danger btn-conf' role='alert'>Preencha o campo obrigatório 'Valor de Venda'<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span></button></div>";
+                        header("Location: ../view/cadastro/newproduct.php");
+                        exit();
+                    }else {
+                        $insertquery->execute();
+                        $_SESSION['msg'] = "<div class='alert alert-success btn-conf' role='alert'>
+                        Produto cadastrado com sucesso!
+                        <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                        </button></div>";
+                        header("Location: ../view/cadastro/newproduct.php");
+                        exit();
+                    }
+                } 
+            ?>
