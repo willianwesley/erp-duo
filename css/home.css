@@ -12,8 +12,9 @@ body{
 }
 
 nav {
-    background: black;
+    background: #231f1e;
     height: 52px;
+    border: none;
 }
 
 ul {
@@ -29,7 +30,7 @@ ul li {
 }
 
 ul li a {
-    color: white;
+    color: #ecf0ec;
     text-decoration: none;
     padding: 10px;
     display: block;
@@ -37,34 +38,43 @@ ul li a {
 
 ul li:hover {
     transition: all .5s;
-    background-color: black!important;
+    background-color: #231f1e!important;
 }
 
 ul ul {
     position: absolute;
-    min-width: 200px;
+    min-width: 185px;
     display: none;
 }
 ul ul li {
     display: block;
-    background: black;
+    background: #231f1e;
 }
 
 ul li:hover ul{
     display: block;
     padding-top: 8px;
-    background: black;
+    background: #231f1e;
 }
 
 ul li i {
     float: right;
     padding-left: 7px;
-    color: white;
+    color: #f9f6f7;
 }
 
 .exitBotton {
     text-decoration: none;
-    color: white;
+    color: #f9f6f7;
+}
+.navbar-geral{
+    display: inline-block;
+    color: #5ac0e8;
+    min-width: 190px;
+    margin: 10px;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 10px;
 }
 a:link {
     text-decoration: none;
@@ -72,10 +82,16 @@ a:link {
 a:hover{
     color: rgb(90, 192, 232);
 }
+.width{
+    max-width: 190px;
+    margin: 10px;
+}
 
 img{
     position: relative;
     margin-bottom: 9px;
     margin-right: 9px;
-    
+}
+ul li ul li a:hover{
+    background-color: #ecf0ec;
 }

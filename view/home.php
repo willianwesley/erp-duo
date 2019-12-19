@@ -26,11 +26,19 @@
        
         <ul>
             <a href="home.php"><img src="../imagens/icone.png" width="30px" height="30px" alt="" title="DuoERP - Sistema de gestão empresarial!"></a>
+            <li><a href="home.php">Home</a></li>
             <li><a href="#">Cadastros <i class="fa fa-sort-desc"></i></a>
                 <ul>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Clientes</a></li>
-                    <li><a href="#">Fornecedores</a></li>
+                    <li class="navbar-geral">Geral</li>
+                    <li><a href="#" class="width">Produtos</a></li>
+                    <li><a href="#" class="width">Clientes</a></li>
+                    <li><a href="#" class="width">Fornecedores</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Vendas</a>
+                <ul>
+                    <li><a href="#">Pedidos</a></li>
+                    <li><a href="#">Vendas</a></li>
                 </ul>
             </li>
         </ul>
