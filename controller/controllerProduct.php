@@ -18,25 +18,25 @@ if($btn){
     $insertquery->bindParam(':cod', $cod);
     $insertquery->bindParam(':valor',$valor_venda);
     $insertquery->bindParam(':codebar',$cod_barra);
-    if($insertquery->execute()){
+    $selectquery = "SELECT id_product FROM products WHERE nome_produto = :n";
+    $sql = $conn->prepare($selectquery);
+    $sql->bindParam(':n',$nome_produto);
+    $sql->execute();
+    if($sql->rowCount() > 0){
+        $_SESSION['msg'] = "<div class='alert alert-danger btn-conf' role='alert'>Produto já cadastrado!<button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+        <span aria-hidden='true'>&times;</span></button></div>";
+        header("Location: ../view/cadastro/newproduct.php");
+        exit();
+    } else {
+        $insertquery->execute();
         $_SESSION['msg'] = "<div class='alert alert-success btn-conf' role='alert'>
         Produto cadastrado com sucesso!
         <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
             <span aria-hidden='true'>&times;</span>
-        </button></div>"
-        ;
+        </button></div>";
         
         header("Location: ../view/cadastro/newproduct.php");
         exit();
-    }else{
-        $_SESSION['msg'] = "<p> Ihhh deu ruim aqui,
-        me ajuda</p>";
-        header("Location: ../view/cadastro/newproduct.php");
     }
-}else{
-    $_SESSION['msg'] = "<p> Ihhh deu ruim aqui,
-    me ajuda</p>";
-    header("Location: ../view/cadastro/newproduct.php");
 }
 ?>
-            
