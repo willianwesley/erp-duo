@@ -16,7 +16,7 @@
 <body>
     <footer>
         <div class="footer">
-            <p><strong>&copy;</strong> ERPDuo 2019 - Política de privacidade | Termos de uso</p>
+            <p><strong>&copy;</strong> ERPDuo 2019 - Desenvolvido por WL</p>
         </div>
     </footer>
 </body>

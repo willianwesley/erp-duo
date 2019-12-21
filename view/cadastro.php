@@ -62,7 +62,7 @@ include 'template/footer.php';
                     class="btn-login">
                 </div>
                 <div class="link-register">
-                    <a href="login.php">Já possui cadastro? <strong>LOGIN</strong></a>
+                    <a href="login.php">Já possui cadastro? <strong> Logue no sistema</strong></a>
                 </div>
             </form>
         </div>

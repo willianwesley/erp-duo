@@ -144,9 +144,18 @@ p{
     font-size: 1.35rem;
     font-weight: 700;
     line-height: 1;
-    color: #000;
+    color: #a9abac;
     text-shadow: 0 1px 0 #fff;
     opacity: .5;
     margin-right: 10px;  
-    margin-top: 10px;
+    margin-top: 15px;
+}
+button {
+    border:none;
+    background-color:#ffd7da;
+    outline:none;
+}
+span:hover{
+    color: black;
+    cursor: pointer;
 }

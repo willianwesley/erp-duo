@@ -61,14 +61,6 @@
         </ul>
         <a href="../controller/exit.php" class="exitBotton">Sair<i class="fas fa-sign-out-alt"></i></a>
     </nav>
-    <div class="container">
-        <div class="card-top conteiner-new">
-            <div class="card-header card-home">
-                Seja bem vindo, Willian Fidelis! Somos o sistema de gestão empresarial DuoERP!
-            </div>
-            <hr>
-        </div>
-    </div>
 </body>
 <style>
 h1#firsth1 {
