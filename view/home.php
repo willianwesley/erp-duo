@@ -38,23 +38,50 @@
                     <li class="navbar-geral">Vendas</li>
                     <li><a href="#" class="width">Pedidos</a></li>
                     <li><a href="#" class="width">Vendas</a></li>
+                    <li><a href="#" class="width">Orçamentos</a></li>
                 </ul>
             </li>
             <li>
-                    <a href="#">Estoque<i class="fa fa-sort-desc"></i></a>
-                </li>
-                <li>
-                    <a href="#">Financeiro<i class="fa fa-sort-desc"></i></a>
-                </li>
-                <li>
-                    <a href="#">Relatórios<i class="fa fa-sort-desc"></i></a>
-                </li>
-                <li>
-                    <a href="#">Ponto de Vendas<i class="fa fa-sort-desc"></i></a>
-                </li>
-                <li>
-                    <a href="../controller/exit.php">Sair</a>
-                </li>
+                <a href="#">Estoque<i class="fa fa-sort-desc"></i></a>
+                <ul>
+                    <li class="navbar-geral">Geral</li>
+                    <li><a href="#" class="width">Estoque</a></li>
+                    <li><a href="#" class="width">Compras</a></li>
+                    <li><a href="#" class="width">Ordem de Compra</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Financeiro<i class="fa fa-sort-desc"></i></a>
+                <ul>
+                    <li class="navbar-geral">Geral</li>
+                    <li><a href="#" class="width">Contas a Pagar</a></li>
+                    <li><a href="#" class="width">Contas a Receber</a></li>
+                    <li><a href="#" class="width">Extrato</a></li>
+                    <li><a href="#" class="width">DRE</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Relatórios<i class="fa fa-sort-desc"></i></a>
+                <ul>
+                    <li class="navbar-geral">Financeiro</li>
+                    <li><a href="#" class="width">Contas a Pagar</a></li>
+                    <li><a href="#" class="width">Contas a Receber</a></li>
+                    <li class="navbar-geral">Vendas</li>
+                    <li><a href="#" class="width">Pedidos</a></li>
+                    <li><a href="#" class="width">Vendas</a></li>
+                    <li><a href="#" class="width">Orçamentos</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Ponto de Vendas<i class="fa fa-sort-desc"></i></a>
+                <ul>
+                    <li class="navbar-geral">Configurações</li>
+                    <li><a href="#" class="width">PDV</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="../controller/exit.php">Sair</a>
+            </li>
             </ul>
         </ul>
     </nav>
