@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <link rel="icon" type="imagem/png" href="../../imagens/icone.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -49,9 +49,6 @@
                     <li>
                         <a href="#">Ponto de Venda<i class="fa fa-sort-desc"></i></a>
                     </li>
-                    <button class="btn-pdv">
-                        <a href="">PDV</a>
-                    </button>
                 </ul>
             <a href="../../controller/exit.php" class="exitBotton">Sair<i class="fas fa-sign-out-alt"></i></a>
         </nav>

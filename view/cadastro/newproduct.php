@@ -35,7 +35,7 @@
             }
             ?>
             <div class="card-body">
-                <form action="../../controller/controllerProduct.php" method="POST" autocomplete="off">
+                <form action="../../controller/controller-product.php" method="POST" autocomplete="off">
                     <div class="row">
                         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 form-group">                         
                             <label for="nameProduct" class="label-product"><strong>Nome do Produto *</strong></label><br>

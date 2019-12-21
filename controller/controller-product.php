@@ -3,11 +3,11 @@ session_start();
 include_once '../model/conexao.php';
 $btn = filter_input(INPUT_POST,'btnn', FILTER_SANITIZE_STRING);
 if($btn){
-    // Receber dos inputs
-    $nome_produto = filter_input(INPUT_POST,'nameProduct', FILTER_SANITIZE_STRING);
-    $cod = filter_input(INPUT_POST,'codProduct', FILTER_SANITIZE_STRING);
-    $valor_venda = filter_input(INPUT_POST,'valorProduct', FILTER_SANITIZE_STRING);
-    $cod_barra = filter_input(INPUT_POST,'codbarProduct', FILTER_SANITIZE_STRING);
+    // Receber dados dos inputs
+    $nome_produto = addslashes($_POST['nameProduct']);
+    $cod = addslashes($_POST['codProduct']);
+    $valor_venda = addslashes($_POST['valorProduct']);
+    $cod_barra = addslashes($_POST['codbarProduct']);
     // Inserir dados no banco de dados
     $resultquery = "INSERT INTO products(nome_produto, codigo, valor_venda, codebar)
     values (:nome, :cod, :valor, :codebar)";

@@ -57,9 +57,6 @@
                 <li>
                     <a href="#">Ponto de Venda<i class="fa fa-sort-desc"></i></a>
                 </li>
-                <button class="btn-pdv">
-                    <a href="">PDV</a>
-                </button>
             </ul>
         </ul>
         <a href="../controller/exit.php" class="exitBotton">Sair<i class="fas fa-sign-out-alt"></i></a>
