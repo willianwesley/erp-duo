@@ -58,7 +58,7 @@ hr{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 130px;
+    margin-top: 90px;
     border: 1px solid #a9abac;
 }
 .btn-login{
@@ -108,7 +108,7 @@ a:hover{
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 130px;
+    margin-top: 90px;
     border: 1px solid #a9abac;
 }
 .link-register{
@@ -121,7 +121,7 @@ a:hover{
     height: 50px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 35px;
     border: 1px solid #a9abac;
     margin-bottom: 1rem;
     border: 1px solid transparent;
@@ -150,12 +150,47 @@ p{
     margin-right: 10px;  
     margin-top: 15px;
 }
-button {
+button#dangerbtn {
     border:none;
     background-color:#ffd7da;
+    outline:none;
+}
+button#successbtn {
+    border:none;
+    background-color:#d4edda;
     outline:none;
 }
 span:hover{
     color: black;
     cursor: pointer;
+}
+.error-login-register{
+    position: relative;
+    width: 475px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    border: 1px solid #a9abac;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.success-login-register{
+    position: relative;
+    width: 475px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    border: 1px solid #a9abac;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+.alert-success{
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    margin-bottom: 15px;
 }

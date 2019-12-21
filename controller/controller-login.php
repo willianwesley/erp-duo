@@ -12,22 +12,24 @@ if(isset($_POST['email'])){
                     header("location: ../view/home.php");
                 }else{
                     $_SESSION['msg'] = " <div class='error-login alert'><p>Email e/ou senha estão incorretos!</p>
-                    <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                    <button id='dangerbtn' type='button' class='close' data-dismiss='alert' aria-label='Close'>
                         <span aria-hidden='true'>&times;</span>
                     </button>
                     </div>";
                     header("Location: ../view/login.php");
+                    exit();
                 }
             }else{
                 echo "Erro: ".$u->msgError;
             }
         }else{
             $_SESSION['msg'] = "<div class='error-login alert'><p>Preencha o campo E-mail/senha para logar!</p>
-            <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+            <button id='dangerbtn' type='button' class='close' data-dismiss='alert' aria-label='Close'>
                 <span aria-hidden='true'>&times;</span>
             </button>
             </div>";
             header("Location: ../view/login.php");
+            exit();
         }
 }
 ?>

@@ -1,4 +1,5 @@
 <?php
+    session_start();
     require_once '../model/user.php';  
     $u = new Usuario;
     // Verificar se clicou no botão
@@ -15,35 +16,44 @@
             if($u->msgError == ""){ // Se está vazia, está tudo certo
                 if($senha == $confsenha){
                     if($u->cadastrar($nome, $telefone, $email, $senha, $confsenha)){
+                        $_SESSION['msg'] = "<div class='success-login-register alert-success'><p>Você foi cadastrado com sucesso!</p>
+                        <a href='login.php' class='alert-success'>LOGAR!</a>
+                        <button id='successbtn' type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                        </button>
+                        </div>";
+                        header("Location: ../view/cadastro.php");
+                        exit();
 
-                        ?>
-                            <div id="msg-sucess">   
-                                Cadastro realizado com sucesso! Faça <a href="../view/login.php">login!</a>
-                            </div>
-                        <?php
                     }else{
-                        ?>
-                            <div id="msg-erro">   
-                                Email já cadastrado
-                            </div>
-                        <?php
+                        $_SESSION['msg'] = "<div class='error-login-register alert'><p>Email já cadastrado no sistema!</p>
+                        <button id='dangerbtn' type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                            <span aria-hidden='true'>&times;</span>
+                        </button>
+                        </div>";
+                        header("Location: ../view/cadastro.php");
+                        exit();
                     }
                 }else{
-                    ?>
-                        <div id="msg-senhas">   
-                            Senha e confirmar senha não estão igual
-                        </div>
-                    <?php
+                    $_SESSION['msg'] = "<div class='error-login-register alert'><p>Senha e confimar senha não conferem!</p>
+                    <button  id='dangerbtn' type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                        <span aria-hidden='true'>&times;</span>
+                    </button>
+                    </div>";
+                    header("Location: ../view/cadastro.php");
+                    exit();
                 }
             }else{
                 echo "Erro: ".$u->msgError;
             }
-        }else {
-            ?>
-                <div id="msg-campos">   
-                    Preencha todos os campos
-                </div>
-            <?php
+        }else{
+            $_SESSION['msg'] = "<div class='error-login-register alert'><p>Preencha os campos para se cadastrar!</p>
+            <button id='dangerbtn' type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                <span aria-hidden='true'>&times;</span>
+            </button>
+            </div>";
+            header("Location: ../view/cadastro.php");
+            exit();
         }
     }
     ?>
