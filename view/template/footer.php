@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <link rel="icon" type="imagem/png" href="../imagens/icone.png"/>
-    <title>ERP Duo - Sistema de gestão empresarial</title>
+    <title>ERP Duo | Sistema de gestão empresarial</title>
     <style>
         .footer {
             position:absolute;

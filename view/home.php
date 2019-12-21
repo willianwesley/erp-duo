@@ -17,7 +17,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/home.css">
-    <title>ERP Duo - Sistema de gestão financeira</title>
+    <title>ERP Duo | Sistema de gestão empresarial</title>
 </head>
 <body>
     <nav class="navbar navbar-light menu">

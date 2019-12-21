@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
-    <title>ERP Duo - Sistema de gestão empresarial</title>
+    <title>ERP Duo | Sistema de gestão empresarial</title>
 </head>
 <body>
     <div class="container">
