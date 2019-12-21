@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    background-color: rgb(90, 192, 232);
+    background-position: 50% 90%;
+    font-family: 'Lato';
+}
+h1{
+    margin-top:40px;
+}
+hr{
+    border: 0;
+    border-top: 1px solid #a9abac;
+    height: 0;
+    box-sizing: content-box;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+}
+.link-password{
+    position: relative;
+    float: right;
+    margin-left: 15px;
+}
+.title-login{
+    margin: 15px;
+    font-size: 11px;
+    text-align: center;
+    margin-bottom:40px;
+    color: #fff;
+}
+.input-login{
+    display: block;
+    height: 40px;
+    width: 400px;
+    margin: 15px;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid #a9abac;
+    padding: 10px 20px;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+    overflow: visible;
+}
+.container{
+    width: 475px;
+    height: 420px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 130px;
+    border: 1px solid #a9abac;
+}
+.btn-login{
+    background-color: #FF0066;
+    width: 440px;
+    height: 50px;
+    margin: 15px;
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+.btn-login:hover{
+    background-color: rgb(90, 192, 232);
+    border-color: #FF0066;;
+}
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+a{
+    margin: 15px;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
+.input-login:focus, .input-login:hover{
+    border-bottom: 1px solid #fff;
+    transition: .5s;
+}
+::-webkit-input-placeholder{
+    color: #fff;
+}
+:-moz-placeholder{
+    color: #fff;
+}
+::-moz-placeholder{
+    color: #fff;
+}
+:-ms-input-placeholder{
+    color: #fff;
+}
