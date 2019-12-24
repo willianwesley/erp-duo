@@ -11,43 +11,74 @@
     <title>ERP Duo | Sistema de gestão empresarial</title>
 </head>
 <body>
-    <nav class="navbar navbar-light menu">
-        <ul>
-            <li><a href="../home.php">Home</a></li>
-            <li><a href="#">Cadastros <i class="fa fa-sort-desc"></i></a>
+    <div>
+        <header>
+            <nav class="navbar navbar-light menu">
                 <ul>
-                    <li class="navbar-geral">Geral</li>
-                    <li><a href="product.php" class="width">Produtos</a></li>
-                    <li><a href="clients.php" class="width">Clientes</a></li>
-                    <li><a href="#" class="width">Fornecedores</a></li>
-                    <li><a href="#" class="width">Transportadoras</a></li>
+                    <li><a href="../home.php">Home</a></li>
+                    <li><a href="#">Cadastros <i class="fa fa-sort-desc"></i></a>
+                        <ul>
+                            <li class="navbar-geral">Geral</li>
+                            <li><a href="product.php" class="width">Produtos</a></li>
+                            <li><a href="clients.php" class="width">Clientes</a></li>
+                            <li><a href="#" class="width">Fornecedores</a></li>
+                            <li><a href="#" class="width">Transportadoras</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Vendas<i class="fa fa-sort-desc"></i></a>
+                        <ul>
+                            <li class="navbar-geral">Vendas</li>
+                            <li><a href="#" class="width">Pedidos</a></li>
+                            <li><a href="#" class="width">Vendas</a></li>
+                            <li><a href="#" class="width">Orçamentos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Estoque<i class="fa fa-sort-desc"></i></a>
+                        <ul>
+                            <li class="navbar-geral">Geral</li>
+                            <li><a href="#" class="width">Estoque</a></li>
+                            <li><a href="#" class="width">Compras</a></li>
+                            <li><a href="#" class="width">Ordem de Compra</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Financeiro<i class="fa fa-sort-desc"></i></a>
+                        <ul>
+                            <li class="navbar-geral">Geral</li>
+                            <li><a href="#" class="width">Contas a Pagar</a></li>
+                            <li><a href="#" class="width">Contas a Receber</a></li>
+                            <li><a href="#" class="width">Extrato</a></li>
+                            <li><a href="#" class="width">DRE</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Relatórios<i class="fa fa-sort-desc"></i></a>
+                        <ul>
+                            <li class="navbar-geral">Financeiro</li>
+                            <li><a href="#" class="width">Contas a Pagar</a></li>
+                            <li><a href="#" class="width">Contas a Receber</a></li>
+                            <li class="navbar-geral">Vendas</li>
+                            <li><a href="#" class="width">Pedidos</a></li>
+                            <li><a href="#" class="width">Vendas</a></li>
+                            <li><a href="#" class="width">Orçamentos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Ponto de Vendas<i class="fa fa-sort-desc"></i></a>
+                        <ul>
+                            <li class="navbar-geral">Configurações</li>
+                            <li><a href="#" class="width">PDV</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../../controller/exit.php" id="btn-exit">Sair</a>
+                    </li>
+                    </ul>
                 </ul>
-            </li>
-            <li>
-                <a href="#">Vendas<i class="fa fa-sort-desc"></i></a>
-                <ul>
-                    <li class="navbar-geral">Vendas</li>
-                    <li><a href="#" class="width">Pedidos</a></li>
-                    <li><a href="#" class="width">Vendas</a></li>
-                </ul>
-            </li>
-            <li>
-                    <a href="#">Estoque<i class="fa fa-sort-desc"></i></a>
-                </li>
-                <li>
-                    <a href="#">Financeiro<i class="fa fa-sort-desc"></i></a>
-                </li>
-                <li>
-                    <a href="#">Relatórios<i class="fa fa-sort-desc"></i></a>
-                </li>
-                <li>
-                    <a href="#">Ponto de Vendas<i class="fa fa-sort-desc"></i></a>
-                </li>
-                <li>
-                    <a href="../../controller/exit.php">Sair</a>
-                </li>
-            </ul>
-        </ul>
-    </nav>
+            </nav>
+        </header>
+    </div>
 </body>
 </html>
